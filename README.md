@@ -31,4 +31,7 @@ I conducted a series of trainings with different parameters:
 - BCE logistLoss function with lr 1e-5
 - BCE logistLoss with input with a mask whose values are 0 and 1 (without torch(*to_tensor*) transform))
     > applying a *to_tensor* function to the mask of 0 & 255 gives a tensor not of 0 & 1, it gives with some gradient in field of separation of class and background (unique: 0.0, 0.011,...0.99, 1.0) more details in a notebook.
-
+    
+Training results are presented on the graph:
+![](Images/graph.png)
+Let's start from the end, at first glance it might seem that it was the best result. But we must take into account the fact that the input mask in this case is different and contain only 0 and 1. Due to the lack of variation in values, accuracy gives the best result. But in practice, the resulting masks are not the best and cope poorly with the dividing field:
