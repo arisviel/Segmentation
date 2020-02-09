@@ -16,7 +16,7 @@ Code of model training based on Pytorch docs with few changes and represent as f
 
 ### Train!
 
-![](Images/error.png) 
+![](Images/error.png) ![](Images/robert.jpg)
 
 
 ### Make the head.
