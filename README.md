@@ -13,9 +13,9 @@ So we need to transform the data to this format. The data contains photos of car
 
 ### Training the model.
 
-Code of model training based on Pytorch docs with few changes and represent as function *train_model*
+Code of model training based on Pytorch docs with few changes and represent as function *train_model* but when it starts we will see:
 
-![](Images/error.png) ![](Images/robert.jpg)
+![](Images/error.png)
 
 
 ### Make the head.
