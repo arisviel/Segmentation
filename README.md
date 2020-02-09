@@ -10,11 +10,9 @@ The model returns an OrderedDict with two Tensors that are of the same height an
   
 So we need to transform the data to this format. The data contains photos of cars and csv file, in which the names of the photo and the mask code for it. After decode we get a tensor of 0&1 with shape H, W, 1. Code represent as function *batch_generator*. Also i made two version of *batch_generator*, first one based on *imgaug* augmentations, it does not work at google colab 🤷‍♀️, the code is in *batch_generator_v1.py*
 
-### Train function.
+### Training the model.
 
 Code of model training based on Pytorch docs with few changes and represent as function *train_model*
-
-### Train!
 
 ![](Images/error.png) ![](Images/robert.jpg)
 
