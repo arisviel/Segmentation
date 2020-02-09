@@ -42,7 +42,7 @@ BCE with logist loss on learning rate 1e-4 and 1e-5 gave the best results(1e-4 a
 
 ### Comparison with the original model.
 Pre-trained Deeplab already should recognize cars, so it would be unfair not to compare the quality obtained with the original model ![](Images/orig1.png) ![](Images/orig2.png)
-      > P.S. yellow is dinning table 
+> P.S. yellow is dinning table 
 
 And test with another one car:
 ![](Images/md23.png) ![](Images/orig3.png)
