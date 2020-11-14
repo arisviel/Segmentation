@@ -20,7 +20,7 @@ Code of model training based on Pytorch docs with few changes and represent as f
 
 ### Make the head.
 
-Error occurs due to adaptive pool layer in ASPP head. I tried use different batch size, predict 2 classes instead of 1 (mask: H,W,2), convert mask to 3 channels - no way. So i built my own deeplabhead without apadtive pooling and with 1 out channel of classifier same as aux classifier.
+Error occurs due to adaptive pool layer in ASPP head. Because the problem is reduced to a binary classification with binary cross entropy, so we need delete adaptive pool layer in head.
 
 ### Results.
 
