@@ -32,7 +32,7 @@ I conducted a series of trainings with different parameters:
     > applying a *to_tensor* function to the mask of 0 & 255 gives a tensor not of 0 & 1, it gives with some gradient in field of separation of class and background (unique: 0.0, 0.011,...0.99, 1.0) more details in a notebook.
     
 Training results are presented on the graph:
-![](Images/graph.png)
+![](Images/graph2.png)
 Let's start from the end, at first glance it might seem that it was the best result. But we must take into account the fact that the input mask in this case is different and contain only 0 and 1. Due to the lack of variation in values, accuracy gives the best result. But in practice, the resulting masks are not the best and cope poorly with the dividing field: ![](Images/md4.png)
 
 BCE loss with sigmoid layers should be the same as BCEWithlogistLoss because it's absolutely same things in theory. In practice this gives the most terrible results, this is a problem somewhere in the code of the function, I'm not the only one who ran into this: ![](Images/md11.png)  ![](Images/md12.png)
